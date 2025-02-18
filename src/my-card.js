@@ -81,7 +81,12 @@ export class MyCard extends LitElement {
         <div class="card-header">${this.title}</div>
 
         <img class="card-image" src="${this.image}" alt="${this.title}" />
-        <div class="card-description">${this.content}</div>
+        <details ?open="${this.fancy}" @toggle="${this.openChanged}">
+          <summary>Description</summary>
+          <div>
+            <slot>${this.content}</slot>
+          </div>
+        </details>
       </div>
     `;
   }
