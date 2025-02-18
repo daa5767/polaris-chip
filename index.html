@@ -1,46 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="Description" content="Boilerplate for polaris chip" />
+    <base href="/" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Boilerplate for polaris chip">
-  <base href="/">
+    <style>
+      :root,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #ededed;
+      }
+      polaris-chip {
+        margin: 16px;
+      }
+    </style>
+    <title>polaris-chip / my-card</title>
+  </head>
 
-  <style>
-    :root,
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
-    }
-    polaris-chip {
-      margin: 16px;
-    }
-  </style>
-  <title>polaris-chip / my-card</title>
-</head>
+  <body>
+    <h1>polaris-chip</h1>
+    <!-- this is going to do whatever the tag's defaults are -->
+    <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
+    <polaris-chip title="Faculty and Staff"></polaris-chip>
+    <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
+    <polaris-chip title="Grants and donations"></polaris-chip>
 
-<body>
-  <h1>polaris-chip</h1>
-  <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
-  <polaris-chip title="Faculty and Staff"></polaris-chip>
-  <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
-  <polaris-chip title="Grants and donations"></polaris-chip>
+    <h1>my-card</h1>
+    <my-card
+      title="The Big Apple "
+      image="https://www.aroundtheworldl.com/wp-content/uploads/2015/04/DSC02105-1.jpg"
+      link="https:hax.psu.edu"
+      content="New York City, the city that never sleeps. My hometown"
+    >
+    </my-card>
 
-  <h1>my-card</h1>
-  <my-card></my-card>
-  <my-card></my-card>
-  <my-card></my-card>
-  <my-card></my-card>
-  <my-card></my-card>
+    <my-card
+      title=" Puerto Rico "
+      image="https://th-thumbnailer.cdn-si-edu.com/C1UOdYgsTDPNWYLeGb9yq9oV-js=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/ed/c7/edc72864-ec48-4e50-9d96-62179ea7921b/42-56717526.jpg"
+      link="https:hax.psu.edu "
+      content="Puerto Rico also known as Isla del Encanto "
+    >
+    </my-card>
+    <my-card
+      title=" Dubai, UAE "
+      image="https://img.spotblue.com/app/uploads/2023/08/why-is-Dubai-famous-for-tourism-1.jpg.webp"
+      link="https:hax.psu.edu "
+      content=" A city and emirate in the United Arab Emirates"
+    >
+    </my-card>
+    <my-card
+      title=" Guayaquil, Ecuador "
+      image="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1622313142/shutterstock_1053699263-church-top-of-the-hill-guayaquil/shutterstock_1053699263-church-top-of-the-hill-guayaquil-1120x732.jpg"
+      link="https:hax.psu.edu "
+      content="Guayaquil, a city in South America. "
+    >
+    </my-card>
 
-  <!-- this is what is bringing in the definition for this tag -->
-  <script type="module" src="./src/polaris-chip.js"></script>
-  <script type="module" src="./src/my-card.js"></script>
-</body>
+    <my-card
+      title=" Tokoyo, Japan "
+      image="https://media.cntraveler.com/photos/63482b255e7943ad4006df0b/16:9/w_2240,c_limit/tokyoGettyImages-1031467664.jpeg"
+      link="https:hax.psu.edu "
+      content="The Capital of Japan, my dream vacation! "
+    >
+    </my-card>
 
+    <!-- this is what is bringing in the definition for this tag -->
+    <script type="module" src="./src/polaris-chip.js"></script>
+    <script type="module" src="./src/my-card.js"></script>
+  </body>
 </html>
